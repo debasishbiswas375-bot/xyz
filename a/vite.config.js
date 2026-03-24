@@ -1,16 +1,15 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
 
   build: {
-    outDir: '../a/static',   // 🔥 VERY IMPORTANT
-    emptyOutDir: true,       // 🔥 CLEAN BUILD
+    outDir: 'a/static',   // 🔥 direct to backend folder
+    emptyOutDir: true,
   },
 
-  base: '/', // 🔥 IMPORTANT for FastAPI
+  base: '/', // IMPORTANT
 
   server: {
     proxy: {
