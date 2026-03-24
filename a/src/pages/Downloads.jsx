@@ -1,5 +1,5 @@
 import React from 'react'
-import { Download, FileText, Windows, Apple, Linux, CheckCircle } from 'lucide-react'
+import { Download, FileText, Monitor, Apple, Linux, CheckCircle } from 'lucide-react'
 
 const Downloads = () => {
   const downloads = [
