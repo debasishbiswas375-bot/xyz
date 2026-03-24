@@ -1,5 +1,5 @@
 import React from 'react'
-import { Download, FileText, Monitor, Apple, Linux, CheckCircle } from 'lucide-react'
+import { Download, FileText, Monitor, Apple, Terminal, CheckCircle } from 'lucide-react'
 
 const Downloads = () => {
   const downloads = [
@@ -7,9 +7,9 @@ const Downloads = () => {
       name: 'Accountesy Desktop App',
       description: 'Native desktop application for Windows, Mac, and Linux',
       platforms: [
-        { name: 'Windows', icon: Windows, url: '#', size: '45 MB' },
+        { name: 'Windows', icon: Monitor, url: '#', size: '45 MB' },
         { name: 'macOS', icon: Apple, url: '#', size: '52 MB' },
-        { name: 'Linux', icon: Linux, url: '#', size: '38 MB' }
+        { name: 'Linux', icon: Terminal, url: '#', size: '38 MB' }
       ],
       features: [
         'Offline processing',
