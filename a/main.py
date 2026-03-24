@@ -54,7 +54,7 @@ app.include_router(feedback_router, prefix="/api", tags=["feedback"])
 
 @app.on_event("startup")
 async def startup_event():
-    await init_db()
+    init_db()
 
 @app.get("/")
 async def root(request: Request):
