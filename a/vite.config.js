@@ -3,16 +3,9 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
+  base: '/static/',   // ✅ THIS IS CRITICAL
   build: {
     outDir: 'static',
-    emptyOutDir: false,
+    emptyOutDir: true,
   },
-  server: {
-    proxy: {
-      '/api': {
-        target: 'http://localhost:8000',
-        changeOrigin: true
-      }
-    }
-  }
 })
