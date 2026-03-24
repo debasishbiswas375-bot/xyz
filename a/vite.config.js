@@ -5,18 +5,9 @@ export default defineConfig({
   plugins: [react()],
 
   build: {
-    outDir: 'a/static',   // 🔥 direct to backend folder
+    outDir: 'a/static',   // 🔥 IMPORTANT
     emptyOutDir: true,
   },
 
   base: '/', // IMPORTANT
-
-  server: {
-    proxy: {
-      '/api': {
-        target: 'http://localhost:8000',
-        changeOrigin: true
-      }
-    }
-  }
 })
